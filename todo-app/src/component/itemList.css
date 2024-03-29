@@ -1,0 +1,8 @@
+.todo_item{
+  width: 600px;
+  height: 50px;
+  padding: 30px;
+  margin: 50px;
+  border: 3px solid rgba(243, 172, 124, 0.622);
+  font-size: 20px;
+}

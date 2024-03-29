@@ -1,16 +1,12 @@
-import './item.css'
 import React from 'react'
 
-function Item() {
+function Item({todoList}) {
   return (
-    <ol>
-        <li>
-          test1
-        </li>
-        <li>
-          test2
-        </li>
-    </ol>
+    <div>
+      {todoList.map((item) => (
+          <div className='todo_item'>{item}</div>
+      ))}
+    </div>
   )
 }
 
