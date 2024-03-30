@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Item({todoList, handleDelete, handleUpdate}) {
+function Item({todoList, edit, handleDelete, handleUpdate}) {
   return (
     <div>
       {todoList.map((item) => (
@@ -9,8 +9,8 @@ function Item({todoList, handleDelete, handleUpdate}) {
                 <div className='button_list'>
                     <button 
                         className='update_item'
-                        onClick={handleUpdate}>
-                        수정
+                        onClick={() => handleUpdate(item.id)}>
+                        {(edit)? "확인": "수정"}
                     </button>
                     <button 
                         className='delete_item'

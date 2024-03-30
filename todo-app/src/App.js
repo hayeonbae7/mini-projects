@@ -8,6 +8,7 @@ function App() {
   const [items, setItems] = useState("");
   //list state
   const [todoList, setTodoList] = useState([]);
+  const [edit, setEdit] = useState(false)
 
   //type 변경
   function handleChange(e) {
@@ -29,7 +30,10 @@ function App() {
     setTodoList(newLists);
   }
 
-  function handleUpdate(){
+  function handleUpdate(id){
+    const editItem = todoList.find(item => item.id === id)
+    setItems({...editItem});
+    setEdit(!edit);
 
   }
 
@@ -40,7 +44,11 @@ function App() {
         <input type="text" value={items} onChange={handleChange}/>
         <button id="add_item" onClick={handleItem}>+</button>
       </div>
-      <ItemList todoList={todoList} handleDelete={handleDelete} handleUpdate = {handleUpdate} />
+      <ItemList 
+        todoList={todoList} 
+        edit={edit}
+        handleDelete={handleDelete} 
+        handleUpdate={handleUpdate} />
     </div>
   );
 }
