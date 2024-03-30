@@ -1,8 +1,26 @@
 .todo_item{
+  display: flex;
+  justify-content: space-between;
   width: 600px;
   height: 50px;
   padding: 30px;
   margin: 50px;
   border: 3px solid rgba(243, 172, 124, 0.622);
+  border-radius: 10px;
   font-size: 20px;
+}
+button{
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+} 
+
+.update_item{
+  background-color: rgb(49, 161, 49);
+  margin: 5px;
+}
+
+.delete_item{
+  background-color: rgb(193, 61, 61);
 }
