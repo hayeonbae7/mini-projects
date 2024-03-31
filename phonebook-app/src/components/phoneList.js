@@ -1,12 +1,13 @@
 import React from 'react'
+import './phoneList.css'
+import PhoneInfo from './phoneInfo'
 
 function PhoneList() {
   return (
-    <div>
-        <div>배하연</div>
-        <div>배하연</div>
-        <div>배하연</div>
-        <div>배하연</div>
+    <div className='main-div'>
+        <PhoneInfo />
+        <PhoneInfo />
+        <PhoneInfo />
     </div>
   )
 }

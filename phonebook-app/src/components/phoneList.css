@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main-div{
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+/* phoneInfo */
+.main-phone{
+    margin: 20px;
+    padding: 5px;
+    text-align: left;
+}

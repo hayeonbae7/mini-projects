@@ -7,7 +7,7 @@ function App() {
       <h1>전화번호부</h1>
       <div>
         <input type='text' />
-        <button>확인</button>
+        <button className="input-submit">확인</button>
       </div>
       <PhoneList />
       
