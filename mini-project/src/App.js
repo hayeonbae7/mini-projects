@@ -28,14 +28,6 @@ function App() {
           </h1>
         </div>
       </header>
-      <main>
-        <ul className='main-header'>
-          <li>혜택&이벤트</li>
-          <li>패션</li>
-          <li>잡화</li>
-          <li>라이프</li>
-        </ul>
-      </main>
       <Contents />
     </div>
   );
