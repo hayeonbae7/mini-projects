@@ -23,6 +23,8 @@ function App() {
     setInfo([...info, newInfo])
     firstId++;
     setOpen(!open);
+    setName("");
+    setNumber("");
   }
 
   function handleClick(){
@@ -42,7 +44,7 @@ function App() {
         <div>
           <h1>전화번호부</h1>
           <div>
-            <input type='text' />
+            <input type='text' className='search-input' />
             <button className="search">검색</button>
           </div>
           <PhoneList info={info} />
