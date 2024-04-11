@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Event from './components/event'
-import Fashionaccessories from './components/fashionaccessories'
-import Fashions from './components/fashions'
+import ManFashions from './components/fashionaccessories'
+import WomanFashions from './components/Womanfashions'
 import Life from './components/life'
 
 function Contents() {
+    const [components, setComponents] = useState("")
   return (
     <div>
         <main>
@@ -16,8 +17,8 @@ function Contents() {
             </ul>
         </main>
         <Event />
-        <Fashions />
-        <Fashionaccessories />
+        <WomanFashions />
+        <ManFashions />
         <Life />
     </div>
   )

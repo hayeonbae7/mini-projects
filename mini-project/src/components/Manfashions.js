@@ -1,38 +1,34 @@
 import React from 'react'
 
-function Life() {
+function ManFashions() {
   return (
     <div>
+        <a href='https://content.29cm.co.kr/post/15805' className='option-banner'>
+            <h1>남성 아우터 <br/> ~60%</h1>
+            <h4>상품 보러가기</h4>
+        </a>
         <div className='option-banner'>
-            <h1>주방&생활 <br/> ~92%</h1>
+            <h1>남성 상의 <br/> ~83%</h1>
             <h4>상품 보러가기</h4>
         </div>
         <div className='option-banner'>
-            <h1>가구&인테리어 <br/> ~49%</h1>
+            <h1>남성 하의 <br/> ~62%</h1>
             <h4>상품 보러가기</h4>
         </div>
         <div className='option-banner'>
-            <h1>테크 <br/> ~68%</h1>
+            <h1>남성 신발 <br/> ~78%</h1>
             <h4>상품 보러가기</h4>
         </div>
         <div className='option-banner'>
-            <h1>뷰티 <br/> ~85%</h1>
+            <h1>남성 가방 <br/> ~48%</h1>
             <h4>상품 보러가기</h4>
         </div>
         <div className='option-banner'>
-            <h1>푸드 <br/> ~65%</h1>
-            <h4>상품 보러가기</h4>
-        </div>
-        <div className='option-banner'>
-            <h1>레자 <br/> ~50%</h1>
-            <h4>상품 보러가기</h4>
-        </div>
-        <div className='option-banner'>
-            <h1>컬쳐 <br/> ~63%</h1>
+            <h1>남성 잡화 <br/> ~78%</h1>
             <h4>상품 보러가기</h4>
         </div>
     </div>
   )
 }
 
-export default Life
+export default ManFashions
