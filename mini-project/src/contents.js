@@ -6,17 +6,26 @@ import Life from './components/life'
 
 function Contents() {
     const [components, setComponents] = useState(1)
-    function handleOpen() {
-
+    function handleOpenEvent() {
+        setComponents(1);
+    }
+    function handleOpenWoman() {
+        setComponents(2);
+    }
+    function handleOpenMan() {
+        setComponents(3);
+    }
+    function handleOpenLife() {
+        setComponents(4);
     }
     return (
         <div>
             <main>
                 <ul className='main-header'>
-                <li onClick={handleOpen}>혜택&이벤트</li>
-                <li onClick={handleOpen}>우먼</li>
-                <li onClick={handleOpen}>맨</li>
-                <li onClick={handleOpen}>라이프</li>
+                <li onClick={handleOpenEvent}>혜택&이벤트</li>
+                <li onClick={handleOpenWoman}>우먼</li>
+                <li onClick={handleOpenMan}>맨</li>
+                <li onClick={handleOpenLife}>라이프</li>
                 </ul>
             </main>
             {components === 1? 
