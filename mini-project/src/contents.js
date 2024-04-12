@@ -3,7 +3,6 @@ import Event from './components/event'
 import ManFashions from './components/Manfashions'
 import WomanFashions from './components/Womanfashions'
 import Life from './components/life'
-import styled from 'styled-components'
 
 
 function Contents() {
@@ -21,10 +20,6 @@ function Contents() {
         setComponents(4);
     }
 
-    const bannerStyle = styled.div`
-        border-bottom: 4px solid rgb(189, 188, 188);
-    `
-    
     return (
         <div>
             <main>

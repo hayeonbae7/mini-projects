@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './event.css'
 
 function Event() {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     function handleOpen() {
         setOpen(!open);
