@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header>
         <div className='header-contents'>
-          <a href='https://www.29cm.co.kr' className='header-logo'>29CM</a>
+          <div className='header-logo'>29CM</div>
           <ul className='header-menu'>
             <li>
               MY PAGE
@@ -18,9 +18,7 @@ function App() {
               SHOPPING BAG
             </li>
             <li>
-              <a href='https://auth.29cm.co.kr/login?redirect_uri=https%3A%2F%2Fcontent.29cm.co.kr%2Fpost%2F15805'>
-                LOGIN
-              </a>
+              LOGIN
             </li>
           </ul>
         </div>

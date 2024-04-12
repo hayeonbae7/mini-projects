@@ -3,6 +3,8 @@ import Event from './components/event'
 import ManFashions from './components/Manfashions'
 import WomanFashions from './components/Womanfashions'
 import Life from './components/life'
+import styled from 'styled-components'
+
 
 function Contents() {
     const [components, setComponents] = useState(1)
@@ -18,17 +20,22 @@ function Contents() {
     function handleOpenLife() {
         setComponents(4);
     }
+
+    const bannerStyle = styled.div`
+        border-bottom: 4px solid rgb(189, 188, 188);
+    `
+    
     return (
         <div>
             <main>
                 <ul className='main-header'>
-                <li onClick={handleOpenEvent}>혜택&이벤트</li>
-                <li onClick={handleOpenWoman}>우먼</li>
-                <li onClick={handleOpenMan}>맨</li>
-                <li onClick={handleOpenLife}>라이프</li>
+                    <li onClick={handleOpenEvent}>혜택&이벤트</li>
+                    <li onClick={handleOpenWoman}>우먼</li>
+                    <li onClick={handleOpenMan}>맨</li>
+                    <li onClick={handleOpenLife}>라이프</li>
                 </ul>
-            </main>
-            {components === 1? 
+                
+                {components === 1? 
                 <Event /> : 
                 (components === 2)? 
                     <WomanFashions /> :
@@ -36,6 +43,7 @@ function Contents() {
                         <ManFashions /> :
                         (components === 4)?
                             <Life /> : null}
+            </main>
         </div>
     )
 }

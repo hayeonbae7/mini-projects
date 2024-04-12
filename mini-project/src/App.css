@@ -56,6 +56,6 @@ img{
 }
 
 .main-header li:hover{
-  border-bottom: 3px solid black;
+  border-bottom: 4px solid rgb(189, 188, 188);
   color: black;
 }

@@ -9,3 +9,35 @@
     height: 500px;
     margin: 70px auto;
 }
+
+.modal{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 20%;
+    background-color: white;
+    box-shadow: 10px 10px 70px gray;
+}
+
+.modal-button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-close{
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid  gray;
+}
+.button-open{
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+}
