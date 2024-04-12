@@ -25,7 +25,9 @@ function App() {
           </ul>
         </div>
         <div className='header-banner'>
-          <img src='https://img.29cm.co.kr/next-edition/2023/03/09/461b29e9a962427899fadfe95f604e2d_20230309151719.gif?width=3000&q=90' />
+          <img 
+            src='https://img.29cm.co.kr/next-edition/2023/03/09/461b29e9a962427899fadfe95f604e2d_20230309151719.gif?width=3000&q=90'
+            alt='봄 이벤트 이미지' />
         </div>
       </header>
       <Contents />

@@ -14,7 +14,8 @@ function Event() {
             </h1>
             <img 
                 src='https://img.29cm.co.kr/next-edition/2023/03/08/60f702a8a6b845e099ec9963f5097af0_20230308150124.png?width=2083&q=90'
-                className='coupon'/>
+                className='coupon'
+                alt='12% 쿠폰'/>
         </div>
     </div>
   )
