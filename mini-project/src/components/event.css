@@ -9,16 +9,20 @@
     height: 500px;
     margin: 70px auto;
 }
+.modal-Wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 40%;
+}
 
 .modal{
     width: 400px;
     height: 200px;
     padding: 20px;
-    margin-left: 15%;
+    margin: auto;
     text-align: center;
-    position: fixed;
-    top: 40%;
-    left: 20%;
     background-color: white;
     box-shadow: 10px 10px 70px gray;
 }
