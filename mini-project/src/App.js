@@ -1,5 +1,9 @@
 import './App.css';
 import Contents from './contents';
+import { IoPersonSharp, IoBag } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
+import { RiLoginBoxFill } from "react-icons/ri";
+
 
 function App() {
   return (
@@ -9,16 +13,20 @@ function App() {
           <div className='header-logo'>29CM</div>
           <ul className='header-menu'>
             <li>
-              MY PAGE
+              <IoPersonSharp className='icons' />
+              <div className='icons-text'>MY PAGE</div>
             </li>
             <li>
-              MY LIKE
+              <FaHeart className='icons'/>
+              <div className='icons-text'>MY LIKE</div>
             </li>
             <li>
-              SHOPPING BAG
+              <IoBag className='icons' />
+              <div className='icons-text'>SHOPPING BAG</div>
             </li>
             <li>
-              LOGIN
+              <RiLoginBoxFill className='icons' />
+              <div className='icons-text'>LOGIN</div>
             </li>
           </ul>
         </div>
