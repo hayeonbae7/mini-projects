@@ -6,6 +6,7 @@
   height: 150px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   position: fixed;
   top: 0;
@@ -13,11 +14,13 @@
 .header-logo{
   width: 60px;
   height: 60px;
-  margin: 50px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 60px;
   color: black;
   font-size: 35px;
   
-}
+} 
 .header-menu{
   height: 30px;
   display: flex;
@@ -74,11 +77,24 @@ img{
 }
 
 @media screen and (max-width: 700px){
+  .header-contents{
+    height: 120px;
+  }
+  .header-banner{
+    height: 450px;
+    margin-top: 120px;
+  }
+  img{
+    height: 450px;
+  }
   .icons-text{
     display: none;
   }
   .icons{
     font-size: 14px;
+  }
+  .main-header{
+    top: 120px;
   }
 }
 
@@ -88,5 +104,14 @@ img{
   }
   img{
     height: 650px;
+  }
+}
+
+@media screen and (min-width: 1411px) {
+  .header-banner{
+    height: 700px;
+  }
+  img{
+    height: 700px;
   }
 }

@@ -25,19 +25,21 @@ function Event() {
         </div>
 
         {open && (
-            <div className='modal'>
-                <h3 className='modal-content'>로그인이 필요합니다.<br/> 로그인을 하시겠습니까?</h3>
-                <div className='modal-button'>
-                    <button 
-                        onClick={handleOpen}
-                        className='button-close'>
-                        취소
-                    </button>
-                    <button 
-                        onClick={handleOpen}
-                        className='button-open'>
-                        확인
-                    </button>
+            <div className='modal-Wrapper'>
+                <div className='modal'>
+                    <h3 className='modal-content'>로그인이 필요합니다.<br/> 로그인을 하시겠습니까?</h3>
+                    <div className='modal-button'>
+                        <button 
+                            onClick={handleOpen}
+                            className='button-close'>
+                            취소
+                        </button>
+                        <button 
+                            onClick={handleOpen}
+                            className='button-open'>
+                            확인
+                        </button>
+                    </div>
                 </div>
             </div>
         )}
